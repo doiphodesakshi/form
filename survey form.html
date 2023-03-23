@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <style>
+        body{
+    font-size: 16px;
+    font-family:system-ui;
+    background:-webkit-radial-gradient(top left,#dabaec,#42065a);
+}
+.form{
+    width:100%;
+}
+h1{
+    text-align:center;
+    color:rgb(248, 152, 63);
+    font-style: italic;
+}
+form{
+    width:300px;
+    padding:15px 40px 40px;
+    border:3px solid #ccc;
+    border-radius: 8px;
+    background-color: rgb(110, 19, 122) ;
+    margin:4%auto;
+}
+label{
+    display:block;
+    margin-bottom:5px;
+    color:rgb(148, 243, 235);
+    font-style: italic;
+    font-size:20px ;
+}
+label i{
+    color:#999;
+    font-size:80%;
+}
+.box{
+    padding-bottom:10px;
+}
+input{
+    border-radius:3px;
+}
+
+.btn{
+    color:#5c227e;
+    background-color: #dabaec;
+}
+.btn:hover{
+    color:aliceblue;
+    background-color: #080508;
+}
+#chec{
+    color:rgb(248, 152, 63);
+}
+#radio{
+    color:rgb(248, 152, 63);
+}
+
+    </style>
+</head>
+<body>
+    <form action="form">
+        <h1>Web Developer's Survey Form</h1>
+        <div class="box">
+            <label> Full name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="box">
+            <label> Email</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div class="box">
+            <label> Mobile Nomber</label>
+            <input type="text" name="mobile" id="mobile" maxlength="10">
+        </div>
+        <div class="box">
+            <label> Age</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <div class="box">
+            <div id="radio">
+            <label> Would you recommended web development career to a friend or family ?</label>
+            Definately<input type="radio" name="myrec">May be 
+            <input type="radio" name="myrec">Not sure
+            <input type="radio" name="myrec"></div>
+        </div>
+        <div class="box">
+            <div id="chec">
+            <label> What is your Favorite Technology languages? </label>
+            <input type="checkbox" name="myhtml">html
+            <input type="checkbox" name="mycss">CSS 
+            <input type="checkbox" name="myjavascript">Javascript 
+            <input type="checkbox" name="myphp">PHP 
+            <input type="checkbox" name="myreact">REACTJS 
+            <input type="checkbox" name="myanguler">AngularJS 
+            <input type="checkbox" name="myvue">Vue 
+            <input type="checkbox" name="myjava">Java </div>
+        </div>
+        <div class="box">
+            <label >
+                Any Comments:
+            </label>
+            <textarea placeholder="Enter your comment here..."  cols="30" rows="3"></textarea>
+        </div>
+        <div class="box">
+            <button class="btn">SUBMIT</button>
+        </div>
+    </form>
+</body>
+</html>
